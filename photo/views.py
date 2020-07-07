@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from .models import Photo
 
-# Create your views here.
+
+def photo_list(request):
+    photos = Photo.objects.all()
+    ctx = {"photos": photos}
+    return render(request, "list.html", ctx)
