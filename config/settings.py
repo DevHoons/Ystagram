@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # apps
     "photo",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -117,3 +118,6 @@ STATIC_URL = "/static/"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# reverse_lazy 함수를 사용하여 다른 view 적용 가능
+LOGIN_REDIRECT_URL = "/"
