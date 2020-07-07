@@ -10,6 +10,8 @@ flake8 = "*"
 [packages]
 django = "*"
 pillow = "*"
+django-disqus = "*"
+six = "*"
 
 [requires]
 python_version = "3.8"

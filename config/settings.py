@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # apps
     "photo",
     "accounts",
+    "disqus",
+    "django.contrib.sites",
 ]
 
 MIDDLEWARE = [
@@ -121,3 +123,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # reverse_lazy 함수를 사용하여 다른 view 적용 가능
 LOGIN_REDIRECT_URL = "/"
+
+DISQUS_WEBSITE_SHORTNAME = "django-ystagram"
+SITE_ID = 1
